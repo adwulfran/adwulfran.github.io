@@ -1,7 +1,7 @@
 import { Observable } from '../../../observable.js'
 import LoaderComponentHTML from '../../loader/loader.component.html';
 import { LoaderComponent } from '../../loader/loader.component.js';
-import style from './orderbook.component.css'
+
 
 export class OrderbookComponent extends HTMLElement {
 
@@ -94,3 +94,5 @@ export class OrderbookComponent extends HTMLElement {
     }
 
 }
+
+customElements.get('orderbook-component') || customElements.define('orderbook-component', OrderbookComponent);
